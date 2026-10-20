@@ -252,7 +252,6 @@ def _rollover_sessions(conn, now):
             created_count += 1
     return created_count
 
-
 def rollover_sessions(now=None):
     """Complete stale active sessions and open sessions for the current shift."""
     now = now or datetime.now()
