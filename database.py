@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 # Ganti 'PASSWORD_ANDA' dengan password saat Anda menginstal PostgreSQL
 # 'driver_app_db' adalah nama database yang akan kita gunakan
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:gus1234@localhost:8000/driver_app_db"
+SQLALCHEMY_DATABASE_URL = "postgresql://neondb_owner:npg_IzWqsx3arB9b@ep-red-cherry-azcv8ya2.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
